@@ -1,0 +1,26 @@
+
+
+<view class="person-page">
+  <!-- 用户信息 -->
+  <view class="person-container">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="user-img" src="{{userInfo.avatarUrl}}"></image>
+      <view class="userinfo-nickname"><text>{{userInfo.nickName}}</text></view>
+      <view class="userinfo-phone">
+        <button wx:if="{{!userPhone}}" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>
+        <text wx:else>{{userPhone}}11111</text>
+      </view>
+    </block>
+  </view>
+
+  <!-- 列 -->
+  <mp-cells ext-class="self-cells">
+    <mp-cell link hover url="../myCard/cardList/cardList" value="我的卡券">
+        <image class="left-icon" slot="icon" src="../../images/card.png"></image>
+    </mp-cell>
+    <mp-cell link hover url="../package/package" value="活动套餐" footer="10张" >
+        <image class="left-icon" slot="icon" src="../../images/huodong.png"></image>
+    </mp-cell>
+  </mp-cells>
+</view>

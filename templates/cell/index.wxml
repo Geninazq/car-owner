@@ -1,0 +1,12 @@
+<template name="cell">
+  <view class="self-row" data-link-name="{{name}}" bindtap="linkTo">
+      <view class="self-left">
+        <image class="left-icon" src="{{iconImg}}"></image>
+        <text>{{leftText}}</text>
+      </view>
+      <view class="self-right" >
+        <text class="right-text red-color">{{rightText}}</text>
+        <image class="right-icon" src="../../images/arrow-r.png"></image>
+      </view>
+    </view>
+</template>

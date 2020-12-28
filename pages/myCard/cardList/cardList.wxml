@@ -1,0 +1,16 @@
+
+
+<view class="card-container container">
+  <view class="card-cell" wx:for="{{couponList}}" wx:key="index" data-num="{{item.name}}" bindtap="linkTo">
+    <view class="card-left">
+      <image src="../../../images/card.png"></image>
+    </view>
+    <view class="card-right">
+      <view class="big-txt">{{item.name}}</view>
+      <view class="small-txt">
+        <text>有效期：</text>
+        <text class="red-color">{{item.validPeriod}}</text>
+      </view>
+    </view>
+  </view>
+</view>

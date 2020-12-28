@@ -1,0 +1,70 @@
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  line-height: 34rpx;
+}
+.header-left image {
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}
+
+.header-left text {
+  font-size: 28rpx;
+  color: #202020;
+}
+.header-right {
+  font-size: 24rpx;
+  color: #9A9A9A;
+}
+
+.activity-box {
+  padding-top: 30rpx;
+}
+.activity-cell {
+  display: flex;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 10rpx;
+  margin-bottom: 30rpx;
+}
+.left-box {
+  flex: 1;
+  padding: 14rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.left-box .left-title {
+  flex: 1;
+  font-size: 32rpx;
+  color: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.left-box .time-txt {
+  font-size: 24rpx;
+  color: #9A9A9A;
+}
+
+.right-box {
+  width: 154rpx;
+  text-align: center;
+  padding: 20rpx 10rpx;
+}
+.sell-box {
+  margin-bottom: 14rpx;
+}
+.right-box .txt-box{
+  /* color: #fff; */
+}
+.right-box .big-txt{
+  font-size: 36rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.right-box .unit-txt {
+  font-size: 20rpx;
+}

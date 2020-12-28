@@ -1,0 +1,93 @@
+/* pages/store/storeList.wxss */
+.store-cotainer {
+  padding-top: 30rpx;
+}
+
+.store-box {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px 0px rgba(73, 44, 112, 0.03);
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+}
+.box-top {
+  padding: 30rpx 0 20rpx;
+  border-bottom: 1px solid #F0F0F0;
+}
+.box-top .top-title {
+  font-size:40rpx;
+  color: #2B2B2B;
+  margin-bottom: 20rpx;
+}
+
+.tag-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tag-cell {
+  height: 36rpx;
+  line-height: 32rpx;
+  border-radius: 20rpx;
+  padding: 0 8rpx;
+  font-size: 20rpx;
+  margin-bottom: 10rpx;
+}
+.tag-cell.red {
+  border: 2rpx solid #FE785E;
+  color: #FE785E;
+}
+.tag-cell.blue {
+  border: 2rpx solid #5E98FE;
+  color: #5E98FE;
+}
+.tag-cell.yellow {
+  border: 2rpx solid #FEBF5E;
+  color: #FEBF5E;
+}.tag-cell.green {
+  border: 2rpx solid #63D48F;
+  color: #63D48F;
+}
+.tag-cell:not(:last-child) {
+  margin-right: 10rpx;
+}
+
+.box-bottom {
+  padding: 30rpx 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  line-height: 36rpx;
+}
+.bottom-left {
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 70%;
+}
+.bottom-left .adress-txt {
+  font-size:24rpx;
+  color: #202020;
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bottom-left .glap {
+  width: 1px;
+  height: 20rpx;
+  background: #C4C4C4;
+  margin: 10rpx 20rpx;
+}
+.bottom-left .away-txt{
+  font-size:24rpx;
+  color: #C4C4C4;
+}
+
+.bottom-right image{
+  width: 34rpx;
+  height: 36rpx;
+  vertical-align: middle;
+}
+.bottom-right text {
+  font-size: 20rpx;
+  color: #9A9A9A;
+  vertical-align: middle;
+}

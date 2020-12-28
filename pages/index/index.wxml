@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 顶部 -->
+  <view class="header-box">
+    <view class="header-left">
+      <image src="../../images/lishijilu.png"></image>
+      <text>最近浏览活动</text>
+    </view>
+    <view class="header-right" bindtap="viewMore">查看更多>></view>
+  </view>
+
+  <!-- 活动列表 -->
+  <view class="activity-box">
+    <view class="activity-cell" wx:for="{{activityList}}" wx:key="index" bindtap="viewDetail">
+      <view class="left-box">
+        <view class="left-title">{{item.name}}</view>
+        <view class="time-txt">
+          <text>活动时间：</text>
+          <text class="red-color">{{item.time}}</text>
+        </view>
+        <view class="time-txt">
+          <text>激活时间：</text>
+          <text class="red-color">{{item.time}}</text>
+        </view>
+      </view>
+      <view class="right-box">
+        <view class="txt-box sell-box">
+          <view class="big-txt">{{item.sellNum}}</view>
+          <view class="unit-txt">已售（份）</view>
+        </view>
+        <view class="htxt-box">
+          <view class="big-txt">{{item.lookNum}}</view>
+          <view class="unit-txt">围观（人）</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+
+.self-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: relative;
+  padding: 40rpx 30rpx;
+  line-height: 40rpx;
+}
+.self-row:after {
+  content: "";
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+  bottom: 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.self-left {
+  font-size:32rpx;
+  color: #2B2B2B;
+}
+.self-right {
+  font-size: 24rpx;
+}
+.red-color {
+  color: #FF6E54;
+}
+.left-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+  vertical-align: top;
+}
+.right-icon{
+  width: 20rpx;
+  height: 28rpx;
+  margin-left: 30rpx;
+  vertical-align: middle;
+}

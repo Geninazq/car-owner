@@ -1,0 +1,24 @@
+/**app.wxss**/
+page {
+  background-color: #F0F3F7;
+}
+.container {
+  padding: 30rpx;
+  box-sizing: border-box;
+} 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 200rpx;
+}
+.red-color {
+  color: #FE785E;
+}
+.self-cells .weui-cell__bd {
+  font-size: 32rpx;
+}
+.self-cells .weui-cell__ft {
+  font-size: 24rpx;
+}

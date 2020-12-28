@@ -1,0 +1,22 @@
+<!--pages/store/storeList.wxml-->
+<view class="store-cotainer">
+  <view class="store-box" wx:for="{{storeList}}" wx:key="index">
+    <view class="box-top">
+      <view class="top-title">{{item.name}}</view>
+      <view class="tag-box">
+        <view class="tag-cell {{colorList[index%4]}}" wx:for="{{item.tagList}}" wx:key="tagItem" wx:for-item="tagItem">{{tagItem}}</view>
+      </view>
+    </view>
+    <view class="box-bottom">
+      <view class="bottom-left">
+        <view class="adress-txt">{{item.adress}}</view>
+        <view class="glap"></view>
+        <view class="away-txt">{{item.distance}}</view>
+      </view>
+      <view class="bottom-right" bindtap="navigation">
+        <image src="../../images/dizhi.png"></image>
+        <text>导航</text>
+      </view>
+    </view>
+  </view>
+</view>

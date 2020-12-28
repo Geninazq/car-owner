@@ -1,0 +1,31 @@
+.person-container {
+  height: 390rpx;
+  text-align: center;
+  padding: 40px 30rpx 30rpx;
+  background: linear-gradient(275deg, #4689FF 0%, #74A6FF 100%);
+}
+.user-img {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  border: 4rpx solid rgba(255, 255, 255, 0.5);
+}
+.userinfo-nickname {
+  font-size: 40rpx;
+  color: #fff;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+.userinfo-phone {
+  font-size: 24rpx;
+  color: #9FC5FF;
+}
+.self-cells  .weui-cells {
+  margin-top: 0;
+}
+.left-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+  vertical-align: middle;
+}

@@ -1,0 +1,27 @@
+<!--pages/myCard/cardDetail/cardDetail.wxml-->
+<view class="cardDetail-container">
+  <!-- 优惠券展示 -->
+  <view class="card-cell " >
+    <view class="card-left">
+      <image src="../../../images/card.png"></image>
+    </view>
+    <view class="card-right">
+      <view class="big-txt">{{detailInfo.name}}</view>
+      <view class="small-txt">
+        <text>有效期：</text>
+        <text class="red-color">{{detailInfo.validPeriod}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 优惠券适用门店 -->
+  <mp-cells ext-class="self-cells">
+    <mp-cell link hover url="../../store/storeList" value="适用门店"></mp-cell>
+    <mp-cell link value="赠送给朋友">
+      <button class="shareBtn" slot="footer" open-type="share">点击立即赠送</button>
+    </mp-cell>
+  </mp-cells>
+
+  <view class="useBtn">立即使用</view>
+</view>
+
