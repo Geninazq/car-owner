@@ -2,6 +2,7 @@
 
 <view class="card-container container">
   <view class="card-cell" wx:for="{{couponList}}" wx:key="index" data-num="{{item.name}}" bindtap="linkTo">
+    <image class="bg-image" src="../../../images/bg1.png"></image>
     <view class="card-left">
       <image src="../../../images/card.png"></image>
     </view>

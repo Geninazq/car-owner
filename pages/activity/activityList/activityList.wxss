@@ -1,10 +1,18 @@
 
 .activity-cell {
   display: flex;
-  background: #FFFFFF;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.06);
   border-radius: 10rpx;
   margin-bottom: 30rpx;
+  position: relative;
+}
+.bg-image {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
 }
 .left-box {
   flex: 1;
@@ -26,22 +34,21 @@
 }
 
 .right-box {
-  width: 154rpx;
+  width: 130rpx;
   text-align: center;
   padding: 20rpx 10rpx;
 }
 .sell-box {
   margin-bottom: 14rpx;
 }
-.right-box .txt-box{
-  /* color: #fff; */
-}
 .right-box .big-txt{
   font-size: 36rpx;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  color: #fff;
 }
 .right-box .unit-txt {
   font-size: 20rpx;
+  color: #fff;
 }

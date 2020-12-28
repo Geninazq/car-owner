@@ -2,6 +2,7 @@
 <!-- 活动列表 -->
 <view class="container activity-box">
     <view class="activity-cell" wx:for="{{activityList}}" wx:key="index">
+      <image class="bg-image" src="../../../images/bg2.png"></image>
       <view class="left-box">
         <view class="left-title">{{item.name}}</view>
         <view class="time-txt">

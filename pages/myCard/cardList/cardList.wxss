@@ -1,11 +1,19 @@
 /* pages/myCard/myCard.wxss */
 .card-cell {
-  background: #fff;
   border-radius: 10rpx;
   box-shadow: 0px 4px 10px 0px rgba(73, 44, 112, 0.03);
   display: flex;
   margin-bottom: 30rpx;
+  position: relative;
 } 
+.bg-image {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
 .card-left image {
   width: 100rpx;
   height: 100rpx;
@@ -13,6 +21,7 @@
 }
 .card-right {
   padding: 30rpx;
+  flex: 1;
 }
 .card-right .big-txt {
   font-size: 36rpx;

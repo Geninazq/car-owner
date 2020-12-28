@@ -82,9 +82,10 @@
 }
 
 .bottom-right image{
-  width: 34rpx;
+  width: 24rpx;
   height: 36rpx;
   vertical-align: middle;
+  margin-right: 10rpx;
 }
 .bottom-right text {
   font-size: 20rpx;

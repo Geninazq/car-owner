@@ -2,6 +2,7 @@
 <view class="cardDetail-container">
   <!-- 优惠券展示 -->
   <view class="card-cell " >
+    <image class="bg-image" src="../../../images/bg1.png"></image>
     <view class="card-left">
       <image src="../../../images/card.png"></image>
     </view>

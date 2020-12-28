@@ -3,6 +3,18 @@
   text-align: center;
   padding: 40px 30rpx 30rpx;
   background: linear-gradient(275deg, #4689FF 0%, #74A6FF 100%);
+  position: relative;
+}
+.bg-image {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 100%;
+}
+.show-box {
+  position: relative;
+  z-index: 1;
 }
 .user-img {
   width: 160rpx;
@@ -28,4 +40,5 @@
   height: 40rpx;
   margin-right: 30rpx;
   vertical-align: middle;
+  margin-bottom: 8rpx;
 }
